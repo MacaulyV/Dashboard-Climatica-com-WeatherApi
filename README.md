@@ -13,7 +13,6 @@ Este projeto é um painel de visualização climática com música, que permite 
 <div align="center">
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="70" alt="Arquitetura do Projeto" /></a>
 </div> <br/>
-<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696198.png" width="150" height="50" alt="Menu" /></a>
 <br/>
