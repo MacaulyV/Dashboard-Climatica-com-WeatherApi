@@ -93,6 +93,16 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696236.png" width="314" height="70" alt="Product Backlog" /></a>
 
+<div align="center">
+ 🔭 **Design da dashboard no Figma,** + navegação do login da aplicação.
+ 
+ 🌱 I’m currently learning **Docker, Supabase, AWS**
+
+💬 Ask me about **Node.js, React, Firebase... or anything [here](https://github.com/salesp07/salesp07/issues)**
+
+⚡ Fun fact **Game of Thrones Night's Watch cloaks are made from Ikea rugs**
+ </div>
+
 ---
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696225.png" width="404" height="70" alt="Tecnologias Utilizadas" /></a>
