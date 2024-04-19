@@ -8,7 +8,7 @@ Este projeto é uma dashboard de controle climático e de música, que permite a
 ouvir música enquanto olha o clima.
 
 <div align="center">
-<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="60" alt="Arquitetura do Projeto" /></a>
+<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="70" alt="Arquitetura do Projeto" /></a>
 </div>
 
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696177.png" width="148" height="57" alt="Menu" /></a>
