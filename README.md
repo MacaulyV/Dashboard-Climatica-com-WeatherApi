@@ -38,12 +38,13 @@ Uma outra funcionalidade seria ter abaixo desse painel 3D Circular três cartõe
 
 
 ###Detalhes:
-
+<br/>
 
 Independentemente de como a aplicação iria reconhecer a localização do usuário, ela deve se integrar a uma API capaz de coletar a temperatura da região identificada do usuário. Uma opção que estamos considerando é utilizar a API do Clima Tempo.
 
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696200.png" width="154" height="48" alt="Centro" /></a>
+<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
@@ -55,8 +56,11 @@ No centro da aplicação, haveria dois blocos, um acima e um abaixo. Agora, entr
 
 Na parte inferior do bloco central, haveria uma função para exibir um campo de música semelhante a um bloco de música com a capa do álbum. Incluiria ícones de avançar, retroceder, pausar, volume, salvar música na playlist e uma barra de progresso da música atual, semelhante a um bloco de reprodução de aplicativos de música como Spotify, Deezer, Apple Music, etc. Além disso, haveria uma barra de pesquisa no topo para que os usuários possam pesquisar e ouvir músicas enquanto verificam as condições climáticas no aplicativo.
 
+Detalhes: 
+<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
+<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
@@ -68,6 +72,9 @@ Em Analise de decisão
 <br/>
 
 Os controles de cor permitiriam ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
+
+Detalhes: 
+<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696199.png" width="147" height="47" alt="Footer" /></a>
 
