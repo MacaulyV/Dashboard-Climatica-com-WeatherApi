@@ -92,8 +92,6 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 ---
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696224.png" width="404" height="70" alt="Tecnologias Utilizadas" /></a>
-
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696225.png" width="404" height="70" alt="Tecnologias Utilizadas" /></a>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
