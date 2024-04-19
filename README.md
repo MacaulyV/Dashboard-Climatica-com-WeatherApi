@@ -46,7 +46,6 @@ Independentemente de como a aplicação iria reconhecer a localização do usuá
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696200.png" width="154" height="48" alt="Centro" /></a>
 <br/>
-<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 
@@ -67,7 +66,6 @@ Para o bloco inferior, poderia ser utilizada uma API de alguma plataforma de mú
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
-<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
