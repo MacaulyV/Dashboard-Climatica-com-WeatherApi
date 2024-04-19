@@ -71,14 +71,6 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 Instruções sobre como instalar, configurar e usar a aplicação.
 
-## Contribuição
-
-Instruções sobre como contribuir para o projeto.
-
-## Licença
-
-Informações sobre a licença do projeto.
-
 ## Contato
 
 <div>
