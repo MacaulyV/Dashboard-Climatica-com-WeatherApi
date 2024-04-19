@@ -93,13 +93,21 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696236.png" width="314" height="70" alt="Product Backlog" /></a>
 
-<div align="center">
 1. **Design da dashboard no Figma**: Criar o **design da dashboard**, incluindo a **navegação do login da aplicação**.
+<br/>
+ 
 2. **Desenvolvimento front-end em React**: Desenvolver a **interface da dashboard**, incluindo a **navegação de login da aplicação**.
+<br/>
+
 3. **Integração do banco de dados com o front-end**: Integrar o **banco de dados com o front-end** para **controle de login da aplicação**.
+<br/>
+
 4. **Desenvolvimento back-end**: Desenvolver o **back-end**, integrando **APIs em Flask+Python** para **sincronização com a Dashboard UI**.
+<br/>
+
 5. **Aprimoramentos para a aplicação e testes**: Realizar **aprimoramentos na aplicação** e realizar **testes** para garantir a qualidade do software.
-</div>
+<br/>
+
 
 ---
 
