@@ -96,7 +96,7 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 <div align="center">
  🔭 **Design da dashboard no Figma,** + navegação do login da aplicação.
  
- 🌱 I’m currently learning **Docker, Supabase, AWS**
+ 🌱 I’m currently learning **Desenvolvimento front-end em React para a dashboard,  + navegação de login da aplicação.**
 
 💬 Ask me about **Node.js, React, Firebase... or anything [here](https://github.com/salesp07/salesp07/issues)**
 
