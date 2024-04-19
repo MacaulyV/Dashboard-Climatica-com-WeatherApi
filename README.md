@@ -6,7 +6,7 @@
 
 Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e ouvir música enquanto olha o clima.
 
-# Arquitetura do Projeto
+<h3 align="center">>Arquitetura do Projeto</h3>
 
 ## Menu
 
