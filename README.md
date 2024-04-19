@@ -21,7 +21,7 @@ No menu principal do aplicativo, na barra de navegação, haveria três elemento
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="350" height="60" alt="Canto Esquerdo" /></a>
 
-A arquitetura que idealizei é a seguinte: a dashboard incluiria um painel 3D circular no lado esquerdo. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura ambiente em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
+Incluir um painel 3D circular no lado esquerdo. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura da localidade do Usuário em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
 
 ### Superior
 
