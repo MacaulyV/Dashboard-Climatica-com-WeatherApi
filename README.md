@@ -10,7 +10,7 @@ ouvir música enquanto olha o clima.
 </div>
 <br/>
 
-<div align="left">
+<div align="center">
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="70" alt="Arquitetura do Projeto" /></a>
 </div> <br/>
 <br/>
