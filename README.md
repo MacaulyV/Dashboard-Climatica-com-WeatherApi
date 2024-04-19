@@ -74,6 +74,4 @@ Informações sobre a licença do projeto.
 <a href="https://www.linkedin.com/in/seu-linkedin/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </div>
 
----
-[
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Input%20text)footer)](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Input%20text)
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=5c1bf5&height=120&section=header"/>
