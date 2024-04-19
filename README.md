@@ -23,10 +23,9 @@ No menu principal do aplicativo, na barra de navegação, haveria três elemento
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 
-Incluir um painel 3D circular no lado esquerdo. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura da localidade do Usuário em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
+Incluir um painel 3D circular. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura da localidade do Usuário em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
 
-
-### Inferior
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
 
 Uma outra funcionalidade seria ter abaixo desse painel 3D Circular três cartões alinhados horizontalmente, preenchendo o espaço restante abaixo do painel superior. Esses cartões teriam a finalidade de fornecer três tipos de informações detalhadas sobre a situação climática da localização atual do usuário, como velocidade do vento, sensação térmica e umidade.
 
@@ -36,21 +35,21 @@ Independentemente de como a aplicação iria reconhecer a localização do usuá
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696200.png" width="154" height="48" alt="Centro" /></a>
 
-### Superior
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 
 No centro da aplicação, haveria dois blocos, um acima e um abaixo. Agora, entra a seção da barra de pesquisa, posicionada ligeiramente acima do bloco superior do meio, destinada a permitir que o usuário busque locais para descobrir as condições climáticas. No bloco superior, localizado logo abaixo, seria exibida a temperatura ambiente como o ponto central, juntamente com um GIF de temperatura à direita que seria atualizado de acordo com as condições climáticas da última pesquisa feita pelo usuário na barra de pesquisa do menu. Neste mesmo bloco, na parte inferior, haveria três seções separadas que mostrariam a velocidade do vento, a sensação térmica e a umidade da região da busca realizada.
 
-### Inferior
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
 
 Na parte inferior do bloco central, haveria uma função para exibir um campo de música semelhante a um bloco de música com a capa do álbum. Incluiria ícones de avançar, retroceder, pausar, volume, salvar música na playlist e uma barra de progresso da música atual, semelhante a um bloco de reprodução de aplicativos de música como Spotify, Deezer, Apple Music, etc. Além disso, haveria uma barra de pesquisa no topo para que os usuários possam pesquisar e ouvir músicas enquanto verificam as condições climáticas no aplicativo.
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
 
-### Superior
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 
 Em Analise de decisão
 
-#### Inferior
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
 
 Os controles de cor permitiriam ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
 
