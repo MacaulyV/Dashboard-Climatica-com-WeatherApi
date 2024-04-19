@@ -91,6 +91,8 @@ Um Controle de cor para permitir ao usuário ajustar a cor da interface com base
 Várias abas simbólicas no rodapé representariam outras seções que podem ser implementadas em futuras atualizações ou melhorias na dashboard.
 
 ---
+dddddddddddd
+---
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696225.png" width="404" height="70" alt="Tecnologias Utilizadas" /></a>
 
