@@ -3,14 +3,13 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00ffff&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+Welcome👋+is+My+Project;Dashboard+Temporal;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="444" height="79" alt="Arquitetura do Projeto" /></a>
-<br />
 
+Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e 
+ouvir música enquanto olha o clima.
 
-Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e ouvir música enquanto olha o clima.
-
-<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696174.png" width="444" height="79" alt="Arquitetura do Projeto" /></a>
-<br />Image by <a href="https://pt.cooltext.com">Cool Text: Logo and Button Generator</a>
-
+<div align="center">
+<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="444" height="79" alt="Arquitetura do Projeto" /></a>
+</div>
 ## Menu
 
 No menu principal do aplicativo, na barra de navegação, haveria três elementos. À esquerda, o nome da dashboard/marca/logo, no centro, uma barra de pesquisa que você entenderá sua função logo à frente, e à direita, um ícone de login da conta do usuário na aplicação.
