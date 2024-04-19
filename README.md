@@ -94,7 +94,7 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696225.png" width="404" height="70" alt="Tecnologias Utilizadas" /></a>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=4808C9)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=0025F5)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
