@@ -4,8 +4,10 @@
 
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696176.png" width="200" height="60" alt="Descrição" /></a>
 
+<div align="center">
 Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e 
 ouvir música enquanto olha o clima.
+</div>
 
 <div align="center">
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="70" alt="Arquitetura do Projeto" /></a>
