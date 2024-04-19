@@ -2,7 +2,8 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00ffff&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+Welcome👋+is+My+Project;Dashboard+Temporal;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
-<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696173.png" width="214" height="65" alt="Descrição" /></a>
+<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696173.png" width="220" height="60" alt="Descrição" /></a>
+
 Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e ouvir música enquanto olha o clima.
 
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696171.gif" width="498" height="70" alt="Arquitetura do Projeto" /></a>
