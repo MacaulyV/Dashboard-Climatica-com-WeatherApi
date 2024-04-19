@@ -27,10 +27,12 @@ No menu principal do aplicativo, na barra de navegação, haveria três elemento
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 <br/>
 
+
 Incluir um painel 3D circular. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura da localidade do Usuário em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
 
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
+<br/>
 
 Uma outra funcionalidade seria ter abaixo desse painel 3D Circular três cartões alinhados horizontalmente, preenchendo o espaço restante abaixo do painel superior. Esses cartões teriam a finalidade de fornecer três tipos de informações detalhadas sobre a situação climática da localização atual do usuário, como velocidade do vento, sensação térmica e umidade.
 
