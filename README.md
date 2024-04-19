@@ -57,12 +57,15 @@ Na parte inferior do bloco central, haveria uma função para exibir um campo de
 
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
+<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
+<br/>
 
 Em Analise de decisão
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
+<br/>
 
 Os controles de cor permitiriam ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
 
