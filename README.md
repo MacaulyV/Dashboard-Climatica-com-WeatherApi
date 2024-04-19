@@ -45,7 +45,7 @@ No centro da aplicação, haveria dois blocos, um acima e um abaixo. Agora, entr
 
 Na parte inferior do bloco central, haveria uma função para exibir um campo de música semelhante a um bloco de música com a capa do álbum. Incluiria ícones de avançar, retroceder, pausar, volume, salvar música na playlist e uma barra de progresso da música atual, semelhante a um bloco de reprodução de aplicativos de música como Spotify, Deezer, Apple Music, etc. Além disso, haveria uma barra de pesquisa no topo para que os usuários possam pesquisar e ouvir músicas enquanto verificam as condições climáticas no aplicativo.
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="330" height="50" alt="Canto Direito" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="30" height="45" alt="Canto Direito" /></a>
 
 ### Superior
 
