@@ -6,9 +6,10 @@
 
 Este projeto é uma dashboard de controle climático e de música, que permite ao usuário monitorar as condições climáticas de varias localização além de sempre ter a temperatura da sua Região atual e ouvir música enquanto olha o clima.
 
-curl -H "Accept: application/vnd.github.v3+json" \
-  -H "Authorization: token SEU_TOKEN" \
-  [https://api.github.com/repos/USUARIO/REPOSITORIO/commits](https://github.com/MacaulyV/ProjetoWebViaApi/tree/main)
+align="center">  
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=mandis-ncs&show_icons=true&include_all_commits=true&count_private=true&layout=compact&hide_border=true&title_color=5c1bf5&text_color=02c931&bg_color=0d1117" /> 
+  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mandis-ncs&layout=compact&hide_border=true&title_color=5c1bf5&text_color=02c931&bg_color=0d1117" />
+</div>
 
 # Arquitetura do Projeto
 
