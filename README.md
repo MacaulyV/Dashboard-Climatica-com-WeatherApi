@@ -60,6 +60,10 @@ Na parte inferior do bloco central, haveria uma função para exibir um campo de
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696207.png" width="197" height="78" alt="Detalhes:" /></a>
 <br/>
 
+
+Para o bloco superior, seria utilizada uma API de previsão do tempo, como a do Clima Tempo, para disponibilizar dados sobre as condições climáticas da localização pesquisada pelo usuário na barra de pesquisa e exibir essas informações na interface.
+Para o bloco inferior, poderia ser utilizada uma API de alguma plataforma de música, como a do Spotify, que é gratuita, para exibir na tela a música pesquisada pelo usuário na barra de pesquisa.
+
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
 <br/>
 <br/>
@@ -67,7 +71,7 @@ Na parte inferior do bloco central, haveria uma função para exibir um campo de
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 <br/>
 
-Em Analise de decisão
+Em Analise de decisão.
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
 <br/>
