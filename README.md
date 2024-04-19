@@ -24,7 +24,6 @@ No menu principal do aplicativo, na barra de navegação, haveria três elemento
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="350" height="60" alt="Canto Esquerdo" /></a>
 <br/>
-<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
 <br/>
