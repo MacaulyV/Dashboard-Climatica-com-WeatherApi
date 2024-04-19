@@ -100,7 +100,7 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696209.png" width="175" height="50" alt="Como Usar" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696210.png" width="175" height="50" alt="Como Usar" /></a>
 
 Instruções sobre como instalar, configurar e usar a aplicação.
 
