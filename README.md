@@ -3,7 +3,6 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00ffff&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+Welcome👋+to+my+project;Climate+Dashboard;Test+and+be+surprised!+:%29)](https://git.io/typing-svg)
 
-Hello, welcome to my project
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696176.png" width="200" height="60" alt="Descrição" /></a>
 
 <div align="left">
