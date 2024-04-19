@@ -19,7 +19,7 @@ Este projeto é um painel de visualização climática com música, que permite 
 
 No menu principal do aplicativo, na barra de navegação, haveria três elementos. À esquerda, o nome da dashboard/marca/logo, no centro, uma barra de pesquisa que você entenderá sua função logo à frente, e à direita, um ícone de login da conta do usuário na aplicação.
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="380" height="58" alt="Canto Esquerdo" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="400" height="60" alt="Canto Esquerdo" /></a>
 
 A arquitetura que idealizei é a seguinte: a dashboard incluiria um painel 3D circular no lado esquerdo. Esse painel seria responsável por mostrar, sempre que o usuário acessar a dashboard, a temperatura ambiente da sua localização. Existem algumas maneiras de fazer isso, como permitir que a aplicação detecte a localização do usuário através do seu sistema operacional. Outra opção seria oferecer um método de login ou conexão para que o usuário crie uma conta na aplicação, onde ele poderia inserir sua localização. Dessa forma, o sistema poderia fornecer a temperatura ambiente em graus sempre que o usuário fizer login ou estiver conectado na aplicação considerando a localização fornecida por ele antes de forma totalmente Automatica.
 
