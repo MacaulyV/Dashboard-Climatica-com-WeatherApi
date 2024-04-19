@@ -75,4 +75,4 @@ Informações sobre a licença do projeto.
 
 ---
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Input%20text)footer)
