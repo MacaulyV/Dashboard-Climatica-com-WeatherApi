@@ -10,7 +10,8 @@ ouvir música enquanto olha o clima.
 <div align="center">
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="444" height="79" alt="Arquitetura do Projeto" /></a>
 </div>
-## Menu
+
+<a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696177.png" width="148" height="57" alt="Menu" /></a>
 
 No menu principal do aplicativo, na barra de navegação, haveria três elementos. À esquerda, o nome da dashboard/marca/logo, no centro, uma barra de pesquisa que você entenderá sua função logo à frente, e à direita, um ícone de login da conta do usuário na aplicação.
 
