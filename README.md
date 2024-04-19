@@ -76,7 +76,7 @@ Em Analise de decisão.
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696206.png" width="130" height="48" alt="Inferior" /></a>
 <br/>
 
-Os controles de cor permitiriam ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
+Um Controle de cor para permitir ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
 
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696207.png" width="197" height="78" alt="Detalhes:" /></a>
