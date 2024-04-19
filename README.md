@@ -104,7 +104,7 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 Instruções sobre como instalar, configurar e usar a aplicação.
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696214.png" width="277" height="73" alt="Como Usar" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696217.png" width="127" height="49" alt="Contato" /></a>
 
 <div>
 <a href="mailto:seu-email@exemplo.com" target="_blank"><img src="https://img.shields.io/badge/-Email-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
