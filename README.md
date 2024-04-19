@@ -55,7 +55,7 @@ Em Analise de decisão
 
 Os controles de cor permitiriam ao usuário ajustar a cor da interface com base em tom, brilho e saturação. mais ainda estamos considerando outras opções
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696199.png" width="177" height="57" alt="Footer" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696199.png" width="147" height="47" alt="Footer" /></a>
 
 Várias abas simbólicas no rodapé representariam outras seções que podem ser implementadas em futuras atualizações ou melhorias na dashboard.
 
