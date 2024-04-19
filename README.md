@@ -35,7 +35,7 @@ Uma outra funcionalidade seria ter abaixo desse painel 3D Circular três cartõe
 
 Independentemente de como a aplicação iria reconhecer a localização do usuário, ela deve se integrar a uma API capaz de coletar a temperatura da região identificada do usuário. Uma opção que estou considerando é utilizar a API do Clima Tempo.
 
-## Centro
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5696200.png" width="154" height="48" alt="Centro" /></a>
 
 ### Superior
 
