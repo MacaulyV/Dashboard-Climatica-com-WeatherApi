@@ -13,6 +13,7 @@ Este projeto é um painel de visualização climática com música, que permite 
 <div align="center">
 <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5696175.png" width="440" height="70" alt="Arquitetura do Projeto" /></a>
 </div> <br/>
+<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696198.png" width="150" height="50" alt="Menu" /></a>
 <br/>
@@ -20,6 +21,7 @@ Este projeto é um painel de visualização climática com música, que permite 
 No menu principal do aplicativo, na barra de navegação, haveria três elementos. À esquerda, o nome da dashboard/marca/logo, no centro, uma barra de pesquisa que você entenderá sua função logo à frente, e à direita, um ícone de login da conta do usuário na aplicação.
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="350" height="60" alt="Canto Esquerdo" /></a>
+<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
