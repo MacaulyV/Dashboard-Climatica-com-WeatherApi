@@ -21,7 +21,6 @@ Este projeto é um painel de visualização climática com música, que permite 
 
 No menu principal do aplicativo, na barra de navegação, haveria três elementos. À esquerda, o nome da dashboard/marca/logo, no centro, uma barra de pesquisa que você entenderá sua função logo à frente, e à direita, um ícone de login da conta do usuário na aplicação.
 <br/>
-<br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696197.png" width="350" height="60" alt="Canto Esquerdo" /></a>
 <br/>
@@ -43,7 +42,6 @@ Uma outra funcionalidade seria ter abaixo desse painel 3D Circular três cartõe
 <br/>
 
 Independentemente de como a aplicação iria reconhecer a localização do usuário, ela deve se integrar a uma API capaz de coletar a temperatura da região identificada do usuário. Uma opção que estamos considerando é utilizar a API do Clima Tempo.
-<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696200.png" width="154" height="48" alt="Centro" /></a>
@@ -68,7 +66,6 @@ Para o bloco inferior, poderia ser utilizada uma API de alguma plataforma de mú
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696203.png" width="310" height="50" alt="Canto Direito" /></a>
-<br/>
 <br/>
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696205.png" width="135" height="50" alt="Superior" /></a>
