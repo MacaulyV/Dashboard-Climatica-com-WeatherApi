@@ -92,7 +92,7 @@ Várias abas simbólicas no rodapé representariam outras seções que podem ser
 
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5696236.png" width="314" height="70" alt="Product Backlog" /></a>
 
-1. **Design da dashboard no Figma**: Criar o **design da dashboard**, incluindo a **navegação do login da aplicação**.
+1. ✅ **Design da dashboard no Figma**: Criar o **design da dashboard**, incluindo a **navegação do login da aplicação**.
 <br/>
  
 2. **Desenvolvimento front-end em React**: Desenvolver a **interface da dashboard**, incluindo a **navegação de login da aplicação**.
