@@ -1,0 +1,104 @@
+.nav {
+  height: 12%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  background: linear-gradient(to right, #000000, #170f46, #170f46);
+}
+
+.Logo {
+  height: 150px;
+  transform: translateY(-10%);
+  margin-top: -1.1%;
+}
+
+.IconLogin {
+  margin-top: 10%;
+  margin-left: 0%;
+  width: 115%;
+  transform: translateX(260%);
+  transition: transform 1s; /* Adiciona uma transição para a transformação */
+}
+
+.IconLogin:hover {
+  transform: scale(1.1) translateX(230%); /* Aumenta o tamanho do ícone e move-o */
+}
+
+.Titulo {
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-size: 2.4em;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 72px;
+  margin-top: 1.75%;
+  margin-left: 0%;
+
+  /* Gradiente de texto */
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #7e3ee4 40%,
+    /* Rosa */ #c69bff 60% /* Rosa Claro */
+  );
+  /* background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(255, 255, 255) 0%,
+    rgb(186.51, 99.33, 255) 100%
+  );*/
+  background-size: 400% 400%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.BarraPesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%; /* Ajuste a largura conforme necessário */
+  transition: border 0.3s ease;
+  margin-left: 2.5%;
+  transform: translateX(3.5%);
+}
+
+.BarraPesquisa input {
+  font-size: 1.1em;
+  margin-top: 0.7%;
+  width: 60%;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  color: rgb(0, 225, 255); /* Cor do texto */
+}
+
+.BarraPesquisa input:hover {
+  border: solid 2px;
+  border-color: rgb(153, 0, 255);
+  background: transparent;
+  transition: 1s;
+  transform: scale(1.25);
+}
+
+.BarraPesquisa input::placeholder {
+  color: rgb(232, 211, 252); /* Altere para a cor desejada */
+}
