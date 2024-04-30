@@ -22,11 +22,11 @@
 }
 
 .IconLogin {
-  width: 50%;
+  width: 45%;
 }
 
 .Titulo {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: SF Pro Display;
   font-weight: 500;
   line-height: 28px;
@@ -42,25 +42,24 @@
 }
 
 .Buttons {
-  margin-top: -125%;
+  margin-top: -122%;
   display: flex;
   flex-direction: column; /* Garante que os botões fiquem um abaixo do outro */
   align-items: center; /* Centraliza os botões horizontalmente */
   justify-content: center; /* Centraliza os botões verticalmente */
-  height: 100%;
   border-bottom: solid 2px;
-  border-color: #252629;
-  height: 52%;
+  border-color: #302c2c;
+  height: 51%;
 }
 
 .Off {
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-family: SF Pro Display;
   font-weight: 300;
   color: #00e1ff;
   margin-left: -2%;
-  transform: translateY(5%);
+  transform: translateY(-25%);
   z-index: 5;
   background-color: #000000;
   border-radius: 50%;
@@ -77,14 +76,15 @@
   color: white;
   border: none;
   border-radius: 10px;
-  padding: 2% 30%;
+  padding: 1.0% 30%;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content; /* Ajuste conforme necessário */
-  margin-bottom: 10px; /* Espaçamento entre os botões */
+  margin-bottom: 7px; /* Espaçamento entre os botões */
 }
 
 .svg1 {
+
   background-color: rgb(255, 255, 255);
   border-radius: 100%;
   padding: 0% 5%;
@@ -127,7 +127,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 114%;
   flex-basis: 30%; /* Use flex-basis em vez de width */
   flex-grow: 0; /* Evite que o elemento encolha ou cresça */
   background-color: rgb(0, 0, 0);
@@ -135,6 +135,7 @@
   z-index: 1;
   border: solid 2px;
   border-color: rgb(0, 89, 255);
+  margin-top: -5.1%;
 }
 
 .Capa {
@@ -145,6 +146,8 @@
   flex-basis: 70%; /* Use flex-basis em vez de width */
   flex-grow: 0; /* Evite que o elemento encolha ou cresça */
   border-radius: 5px 150px 150px 5px;
+  margin-top: -5.1%;
+  height: 114%;
 }
 
 .Capa1 {
@@ -167,10 +170,14 @@
   height: 10%;
 }
 
+.h4{
+  transform: translateY(15%);
+}
+
 .Registre {
   width: 100%; /* Ajuste a largura conforme necessário */
   transition: border 0.3s ease;
-  transform: translateY(126%);
+  transform: translateY(120%);
   color: #00ccff;
   display: flex;
   flex-direction: column;
@@ -193,12 +200,13 @@
 }
 
 .formGroup1 {
-  margin-top: -5%;
+  margin-top: -8%;
 }
 
 .Registre label {
+  font-size: 1.0em;
   font-family: SF Pro Display;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -222,13 +230,13 @@
   font-family: SF Pro Display;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.582); /* Altere para a cor desejada */
-  font-size: 0.9em;
+  font-size: 0.77em;
   transform: translateX(-1%);
 }
 
 .Registre h4 {
   margin-left: 15%;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: SF Pro Display;
   font-weight: 500;
   margin-top: -23.5%;
@@ -243,7 +251,7 @@
 
 .TextCheckbox {
   transform: translateY(-115%);
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-family: SF Pro Display;
   font-weight: 200;
   margin-left: 60%;
@@ -260,23 +268,25 @@
 }
 
 .Logar {
-  font-size: 1.1em;
+  font-size: 1.0em;
   font-family: SF Pro Display;
   font-weight: 500;
   color: #ffffff;
   transform: translateY(87%);
-  border-radius: 15px;
+  border-radius: 11px;
   background: radial-gradient(circle, #004BDD 100%, #000000 100%);
-  padding: 4%;
-  margin-left: 23%;
+  padding: 2.5% 1.0%;
+  margin-left: 45%;
   border: solid 2px;
   border-color: #9000ff;
-  overflow: hidden;
+  transform: translateX(-21%);
+  margin-top: 15%;
 }
 
 .Logar:hover {
   background: radial-gradient(circle, #17111d 100%, #000000 100%);
   cursor: pointer;
   transform: translateY(87%) scale(1.1);
+  transform: translateX(-18%);
 }
 

@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 const Login = () => {
   const [focusedInput, setFocusedInput] = useState<string | null>(null);
   const [receberNotificacoes, setReceberNotificacoes] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleInputFocus = (inputId: string) => {
     setFocusedInput(inputId);
@@ -35,6 +37,49 @@ const Login = () => {
     setSelectedVideo(selectRandomVideo());
   }, []);
 
+  const [formData, setFormData] = useState({
+    nome_usuario: "",
+    senha: "",
+    cidade_preferencia: "",
+    receber_notificacoes: false,
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async () => {
+    setSubmitting(true);
+    try {
+      const response = await fetch("http://localhost:5000/registrar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Verifique se a solicitação foi bem-sucedida
+      if (response.ok) {
+        // Se a resposta estiver ok, redirecione para a próxima página ou faça qualquer outra ação necessária
+        setMessage("Cadastro realizado com sucesso!");
+      } else {
+        // Se a resposta não estiver ok, lide com o erro
+        const data = await response.json();
+        setMessage(`Erro ao cadastrar usuário: ${data.error}`);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        setMessage(`Erro ao cadastrar usuário: ${error.message}`);
+      } else {
+        setMessage("Erro ao cadastrar usuário: Ocorreu um erro desconhecido.");
+      }
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <main className={styles.TelaLogin}>
       <div className={styles.Conteudo}>
@@ -53,7 +98,7 @@ const Login = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
             />
-            <h4 className={styles.Titulo}>Inscreva-se ou faça login com</h4>
+            <h4 className={styles.Titulo}>Inscreva-se de forma rápida com</h4>
             <button className={styles.customButton}>
               <svg
                 className={styles.svg1}
@@ -150,11 +195,14 @@ const Login = () => {
           </div>
           <div className={styles.container}>
             <form className={styles.Registre}>
-              <h4>Registre-se!</h4>
+              <h4 className={styles.h4}>Registre-se!</h4>
+              {message && <p>{message}</p>}
               <div className={styles.formGroup1}>
                 <label
                   htmlFor="nome1"
-                  className={`${styles.label} ${focusedInput === 'nome1' ? styles.focused : ''}`}
+                  className={`${styles.label} ${
+                    focusedInput === "nome1" ? styles.focused : ""
+                  }`}
                 >
                   Nome de Usuário
                 </label>
@@ -163,14 +211,17 @@ const Login = () => {
                   id="nome1"
                   name="nome1"
                   placeholder="Digite seu nome de usuário"
-                  onFocus={() => handleInputFocus('nome1')}
+                  onFocus={() => handleInputFocus("nome1")}
                   onBlur={handleInputBlur}
+                  onChange={handleChange}
                 />
               </div>
               <div className={styles.formGroup}>
                 <label
                   htmlFor="nome2"
-                  className={`${styles.label} ${focusedInput === 'nome2' ? styles.focused : ''}`}
+                  className={`${styles.label} ${
+                    focusedInput === "nome2" ? styles.focused : ""
+                  }`}
                 >
                   Senha
                 </label>
@@ -179,14 +230,17 @@ const Login = () => {
                   id="nome2"
                   name="nome2"
                   placeholder="Digite uma senha"
-                  onFocus={() => handleInputFocus('nome2')}
+                  onFocus={() => handleInputFocus("nome2")}
                   onBlur={handleInputBlur}
+                  onChange={handleChange}
                 />
               </div>
               <div className={styles.formGroup}>
                 <label
                   htmlFor="nome3"
-                  className={`${styles.label} ${focusedInput === 'nome3' ? styles.focused : ''}`}
+                  className={`${styles.label} ${
+                    focusedInput === "nome3" ? styles.focused : ""
+                  }`}
                 >
                   Digite uma Cidade de Preferência
                 </label>
@@ -195,8 +249,9 @@ const Login = () => {
                   id="nome3"
                   name="nome3"
                   placeholder="Digite uma cidade"
-                  onFocus={() => handleInputFocus('nome3')}
+                  onFocus={() => handleInputFocus("nome3")}
                   onBlur={handleInputBlur}
+                  onChange={handleChange}
                 />
               </div>
               <div className={styles.Caixa}>
@@ -206,10 +261,21 @@ const Login = () => {
                     checked={receberNotificacoes}
                     onChange={handleCheckboxChange}
                   />
-                  <span className={styles.TextCheckbox}>Receber notificações do clima</span>
+                  <span className={styles.TextCheckbox}>
+                    Receber notificações do clima
+                  </span>
                 </label>
               </div>
-              <button className={styles.Logar}>Sign up</button>
+              <button
+                className={styles.Logar}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSubmit();
+                }}
+                disabled={submitting}
+              >
+                {submitting ? "Enviando..." : "Sign up"}
+              </button>
             </form>
           </div>
         </motion.div>

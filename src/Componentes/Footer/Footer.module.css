@@ -14,17 +14,17 @@
   height: 74px;
   justify-content:space-around;
   align-items: center;
-  margin-top: 65%;
+  margin-top: 50%;
 }
 
 .Link {
   color: #ffffff;
   font-family: "SF Pro Display-Bold", Helvetica;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   line-height: 36px;
   text-decoration: none;
-  padding: 0.5% 1.0%;
+  padding: 0.4% 1.0%;
   border-radius: 20px;
   position: relative;
   overflow: hidden;

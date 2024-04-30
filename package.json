@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.24.4",
+    "axios": "^1.6.8",
     "babel-runtime": "^6.26.0",
     "framer-motion": "^11.1.7",
     "next": "14.2.2",
