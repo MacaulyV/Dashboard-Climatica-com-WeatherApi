@@ -1,10 +1,25 @@
 // src/componentes/nav/Nav.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../Nav/Nav.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const Nav = () => {
+interface NavProps {
+ setCidade: (cidade: string) => void; // Adicione esta prop
+}
+
+const Nav = ({ setCidade }: NavProps) => {
+ const [pesquisa, setPesquisa] = useState(''); // Novo estado para o valor do campo de pesquisa
+
+ const handlePesquisaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPesquisa(e.target.value);
+ };
+
+ const handlePesquisaSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setCidade(pesquisa); // Atualiza a cidade com o valor atual do campo de pesquisa
+ };
+
  return (
     <nav className={styles.nav}>
       <motion.img
@@ -23,8 +38,13 @@ const Nav = () => {
       >
         ClimaticFuture
       </motion.h1>
-      <form className={styles.BarraPesquisa}>
-        <input type="text" placeholder="Buscar cidade" />
+      <form className={styles.BarraPesquisa} onSubmit={handlePesquisaSubmit}>
+        <input
+          type="text"
+          placeholder="Buscar cidade"
+          value={pesquisa}
+          onChange={handlePesquisaChange}
+        />
       </form>
       <Link href="/Login">
         <div>
