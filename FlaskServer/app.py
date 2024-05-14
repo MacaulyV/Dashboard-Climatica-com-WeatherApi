@@ -58,7 +58,11 @@ def clima():
         return jsonify({"error": "Cidade não informada"}), 400
     
     try:
+
         url = f"http://api.openweathermap.org/data/2.5/forecast?q={cidade}&appid=YOUR_API_KEY"
+
+        url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid="
+
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
