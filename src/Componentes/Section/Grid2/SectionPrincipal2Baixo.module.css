@@ -1,0 +1,116 @@
+.Principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transform: translateX(-35%) translateY(33%);
+}
+
+.GridDiasSemanasTop,
+.GridDiasSemanasLow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10%;
+  transform: translateX(-135%) translateY(43%);
+  width: 10%;
+}
+
+.GridDiasSemanasTop {
+  margin-top: -9%;
+  margin-left: -38%;
+}
+
+.GridDiasSemanasLow {
+  transform: translateX(-300%);
+  transform: translateY(100%);
+}
+
+.Hoje,
+.Quarta,
+.Quinta,
+.Sexta,
+.Sabado,
+.Domingo,
+.Segunda,
+.Terça {
+  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(66, 10, 177, 0.5);
+  border-radius: 20px;
+  border: solid 1px;
+  border-color: aliceblue;
+  margin: 5px;
+  padding: -15px;
+  transform: translateX(-57%) translateY(5%);
+  height: 120px; /* Altura fixa */
+}
+
+.Sabado {
+  padding-left: 22px;
+}
+
+.Sexta {
+  padding-left: 21px;
+}
+.Quarta,
+.Quinta {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.DiaIcon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.NomeSemana, .NomeSemanaS {
+  font-weight: 600;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 0.9em;
+  color: white;
+  transform: translateY(25%);
+  white-space: nowrap;
+  margin-top: 15%;
+}
+
+.NomeSemanaS {
+  transform: translateX(-6%);
+  margin-top: 19%;
+}
+
+.IconSemana {
+  width: 40%;
+}
+
+.Temperatura {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40%;
+  font-weight: 200;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 0.8em;
+  margin-top: -10%;
+}
+
+.GrauMax {
+  color: rgb(255, 255, 255);
+  transform: translateY(70%);
+}
+
+.GrauMin {
+  color: rgba(255, 255, 255, 0.84);
+  transform: translateY(-40%);
+}
+
+.DescriçãoClima2 {
+  transform: translateY(-100%);
+  font-weight: 200;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.899);
+  margin-left: 2%;
+}

@@ -1,0 +1,161 @@
+.ContainerPrincipal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 12.5%;
+  margin-left: 0.5%;
+}
+
+.Grid1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 85%;
+}
+
+.Top1 {
+  background: linear-gradient(90deg, rgb(15, 0, 150) 0%, #6200ff3b 50%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 105%;
+  margin-left: 5%;
+  height: 470px;
+  margin-top: -18%;
+  transform: translateX(-100%);
+  transition: box-shadow 0.5s, transition-delay 0.5s; /* Adiciona uma transição para a propriedade box-shadow e transition-delay */
+  box-shadow: none; /* Inicialmente sem sombra */
+}
+
+.Top1:hover {
+  box-shadow: 0 0 5px rgb(111, 0, 255), 0 0 10px rgb(111, 0, 255),
+    0 0 20px rgb(111, 0, 255), 0 0 40px rgb(111, 0, 255),
+    0 0 80px rgb(111, 0, 255);
+  border: solid;
+  border-color: #9900ff;
+  transition-delay: 0.0.5s; /* Remove o atraso na transição para a sombra */
+}
+
+.Top1ConteudoCima {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  white-space: nowrap;
+  color: white;
+  font-family: "SF Pro Display", sans-serif;
+  word-spacing: 3px;
+  margin-top: 1%;
+}
+
+.ButtonSvg {
+  width: 20%;
+  cursor: pointer;
+}
+
+.LocationSvg {
+  width: 55px;
+}
+
+.thermostat {
+  transform: translateY(-8%) scale(0.9);
+}
+
+.Temp {
+  transform: translateY(-1600%);
+  margin-left: 38%;
+  color: transparent; /* Define a cor do texto como transparente */
+  font-size: 1.15em;
+  font-weight: 500;
+  font-family: "SF Pro Display", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #ff0062,
+    #ff0062,
+    rgb(0, 255, 255),
+    rgb(0, 255, 255)
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Graus {
+  transform: translateY(-1080%);
+  margin-left: 42.5%;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: white;
+}
+
+.Low1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 2.5%;
+  width: 100%;
+  margin-top: -49.0%;
+  gap: 0%;
+}
+
+.IconVento{
+width: 40%;
+margin-top: 3%;
+}
+
+.Icon{
+  margin-top: 3%;
+}
+
+.MiniBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgb(15, 0, 150) 0%, #6200ff3b 50%);
+  border-radius: 25px;
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: 120px; /* Ajuste o tamanho conforme necessário */
+  margin-right: 10px; /* Adicione margem direita para separar as caixas */
+}
+
+.Icon1,
+.Icon2,
+.Icon3 {
+  transform: translateY(100%) scale(2);
+  fill: #00ff4c;
+  /*fill: rgb(0, 255, 255); */
+}
+
+.Icon3 {
+  margin-left: -6%;
+}
+
+.SubParagrafo {
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+  transform: translateY(-90%);
+  white-space: nowrap;
+}
+
+.Valor {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-weight: 600;
+  transform: translateY(-250%);
+}
