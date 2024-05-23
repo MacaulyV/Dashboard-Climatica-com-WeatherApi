@@ -87,30 +87,65 @@ def clima():
         return jsonify({"error": "Cidade não informada"}), 400
     
     try:
-        url = f"http://api.openweathermap.org/data/2.5/forecast?q={cidade}&appid=1b267ca5664ea689f15c46015e55af37"
+        # Modifique a URL da API para incluir o intervalo de tempo desejado
+        url = f"http://api.openweathermap.org/data/2.5/forecast?q={cidade}&appid=1b267ca5664ea689f15c46015e55af37&units=metric"
         response = requests.get(url)
-        if response.status_code == 200:
-            data = response.json()
-            daily_forecast = {}
-
-            for forecast in data['list']:
-                date = datetime.strptime(forecast['dt_txt'], '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d')
-                if date not in daily_forecast:
-                    daily_forecast[date] = {
-                        'max_temp': forecast['main']['temp_max'],
-                        'min_temp': forecast['main']['temp_min'],
-                        'description': forecast['weather'][0]['description'],
-                    }
-                else:
-                    daily_forecast[date]['max_temp'] = max(daily_forecast[date]['max_temp'], forecast['main']['temp_max'])
-                    daily_forecast[date]['min_temp'] = min(daily_forecast[date]['min_temp'], forecast['main']['temp_min'])
-
-            daily_forecast_list = [{'date': date, **data} for date, data in sorted(daily_forecast.items())]
-            return jsonify(daily_forecast_list), 200
-        else:
+        if response.status_code!= 200:
             return jsonify({"error": "Erro ao buscar dados do clima"}), 500
+        
+        data = response.json()
+        daily_forecast = {}
+        for forecast in data['list']:
+            date = datetime.strptime(forecast['dt_txt'], '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d %H:%M')
+            if date not in daily_forecast:
+                daily_forecast[date] = {
+                    'max_temp': forecast['main']['temp_max'],
+                    'min_temp': forecast['main']['temp_min'],
+                    'description': forecast['weather'][0]['description'],
+                }
+            else:
+                daily_forecast[date]['max_temp'] = max(daily_forecast[date]['max_temp'], forecast['main']['temp_max'])
+                daily_forecast[date]['min_temp'] = min(daily_forecast[date]['min_temp'], forecast['main']['temp_min'])
+        
+        daily_forecast_list = [{'date': date, **data} for date, data in sorted(daily_forecast.items())]
+        return jsonify(daily_forecast_list), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+@app.route('/previsao-horaria', methods=['GET'])
+def previsao_horaria():
+    cidade = request.args.get('cidade')
+    if not cidade:
+        return jsonify({"error": "Cidade não informada"}), 400
+    
+    try:
+        # Substitua YOUR_API_KEY pela sua chave da OpenWeatherMap API
+        url = f"http://api.openweathermap.org/data/2.5/forecast?q={cidade}&appid=1b267ca5664ea689f15c46015e55af37&units=metric"
+        response = requests.get(url)
+        response.raise_for_status()
+        
+        data = response.json()
+        forecasts = []
+        for item in data['list']:
+            forecasts.append({
+                'date': datetime.fromtimestamp(item['dt']).strftime('%Y-%m-%d %H:%M'),
+                'temp': item['main']['temp'],
+                'description': item['weather'][0]['description']
+            })
+        
+        return jsonify(forecasts), 200
+    except requests.exceptions.HTTPError as errh:
+        logging.error(f"Erro HTTP: {errh}")
+        return jsonify({"error": "Erro ao buscar dados climáticos", "details": str(errh)}), 500
+    except requests.exceptions.ConnectionError as errc:
+        logging.error(f"Erro de conexão: {errc}")
+        return jsonify({"error": "Erro de conexão", "details": str(errc)}), 500
+    except requests.exceptions.Timeout as errt:
+        logging.error(f"Tempo limite da solicitação: {errt}")
+        return jsonify({"error": "Erro de tempo limite da solicitação", "details": str(errt)}), 500
+    except requests.exceptions.RequestException as err:
+        logging.error(f"Erro de solicitação: {err}")
+        return jsonify({"error": "Erro de solicitação", "details": str(err)}), 500    
 
 @app.route('/map-location', methods=['POST'])
 def get_map_location():

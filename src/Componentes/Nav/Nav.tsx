@@ -162,6 +162,7 @@ const Nav = ({ setCidade, setMapCoordinates }: NavProps) => {
           }}
         />
       </Link>
+      <h3 className={styles.Welcome}>Olá Macauly<br />Seja bem-vindo</h3>
     </nav>
   );
 };

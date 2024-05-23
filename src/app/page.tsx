@@ -6,7 +6,7 @@ import Footer from "@/Componentes/Footer/Footer";
 import SectionPrincipal1 from "@/Componentes/Section/Grid1/SectionPrincipal1";
 import SectionPrincipal2 from "@/Componentes/Section/Grid2/SectionPrincipal2";
 import GoogleMaps from "@/Componentes/Section/Grid3/GoogleMaps";
-import { HoraLocalContext } from "@/Componentes/Section/Grid2/HoraLocalContext";
+import DiadaSemana from "@/Componentes/Section/Grid2/DiasSemanas/DiadaSemana";
 
 const traduzirDescricaoClima = (descricao: string) => {
   switch (descricao.toLowerCase()) {
@@ -76,7 +76,7 @@ type CityKey =
   | "Moscow"
   | "Vancouver"
   | "Rio de Janeiro"
-  | "Sao Paulo";
+  | "São Paulo";
 
 const cityBackgrounds: Record<CityKey, string> = {
   Paris: "/Gifs/paris.gif",
@@ -99,6 +99,7 @@ const Page = () => {
   const [velocidadeVento, setVelocidadeVento] = useState<string>("");
   const [precipitacao, setPrecipitacao] = useState<string>("");
   const [dataAtual, setDataAtual] = useState<Date>(new Date());
+  const [dadosClimaticos, setDadosClimaticos] = useState<Forecast[]>([]); // Ajustado para array de Forecast
   const [mapCoordinates, setMapCoordinates] = useState<{
     lat: number;
     lng: number;
@@ -107,6 +108,27 @@ const Page = () => {
   useEffect(() => {
     console.log("Sessão carregada");
   }, []);
+
+  useEffect(() => {
+    const buscarPrevisaoHoraria = async () => {
+      try {
+        const response = await fetch(
+          `http://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(
+            cidade
+          )}&appid=1b267ca5664ea689f15c46015e55af37&lang=pt_br`
+        );
+        if (!response.ok) {
+          throw new Error(`HTTP error status: ${response.status}`);
+        }
+        const data = await response.json();
+        setDadosClimaticos(data.list); // Define os dados da previsão horária
+      } catch (error) {
+        console.error("Erro ao buscar previsão horária:", error);
+      }
+    };
+
+    buscarPrevisaoHoraria();
+  }, [cidade]);
 
   useEffect(() => {
     const buscarCoordenadas = async () => {
@@ -146,10 +168,16 @@ const Page = () => {
         setDescricaoClima(data.weather[0].description);
         setUmidade(data.main.humidity + "%");
         setVelocidadeVento(data.wind.speed + " km/h");
-        setPrecipitacao(data.rain ? data.rain["1h"] : "0 mm"); // Exemplo para chuva nos últimos 1h
-        setHoraLocalApi(new Date().toLocaleString("pt-BR"));
+        setPrecipitacao(data.rain ? data.rain["1h"] + " mm/h" : "0 mm/h");
+        // Obtém a hora local da API para ajustar a exibição
+        const localTime = new Date(
+          data.dt * 1000 + data.timezone * 1000
+        ).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+        setHoraLocalApi(localTime);
+        // Log de depuração para verificar o valor da hora local
+        console.log("Hora local obtida da API:", localTime);
       } catch (error) {
-        console.error("Erro ao carregar dados climáticos:", error);
+        console.error("Erro ao buscar dados climáticos:", error);
       }
     };
 
@@ -170,24 +198,28 @@ const Page = () => {
       />
       <div className={styles.Section}>
         <SectionPrincipal1 clima={null} />
-        {temperaturaAtual !== null && (
-          <SectionPrincipal2
-            backgroundUrl={
-              cityBackgrounds[nomeCidade as keyof typeof cityBackgrounds] ||
-              "/gifs/default.gif"
-            }
-            temperatura_atual={temperaturaAtual.toString()}
-            nomeCidade={nomeCidade || ""}
-            descricaoClima={traduzirDescricaoClima(descricaoClima || "")}
-            horaLocal={horaLocalApi} 
-            umidade={umidade}
-            velocidadeVento={velocidadeVento}
-            precipitacao={precipitacao}
-            diaDaSemana={dataAtual.toLocaleDateString("pt-BR", {
-              weekday: "long",
-            })}
-          />
-        )}
+        <div>
+          {temperaturaAtual !== null && (
+            <SectionPrincipal2
+              backgroundUrl={
+                cityBackgrounds[nomeCidade as keyof typeof cityBackgrounds] ||
+                "/gifs/default.gif"
+              }
+              temperatura_atual={temperaturaAtual.toString()}
+              nomeCidade={nomeCidade || ""}
+              descricaoClima={traduzirDescricaoClima(descricaoClima || "")}
+              horaLocal={horaLocalApi}
+              umidade={umidade}
+              velocidadeVento={velocidadeVento}
+              precipitacao={precipitacao}
+              diaDaSemana={dataAtual.toLocaleDateString("pt-BR", {
+                weekday: "long",
+              })}
+            />
+          )}
+
+          <DiadaSemana forecasts={dadosClimaticos} />
+        </div>
         <div className={styles.container}>
           {mapCoordinates && <GoogleMaps center={mapCoordinates} />}
         </div>

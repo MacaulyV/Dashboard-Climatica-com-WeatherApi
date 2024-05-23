@@ -10,8 +10,11 @@ const GoogleMaps: React.FC<MapProps> = ({ center }) => {
   const containerStyle = {
     borderRadius: "25px",
     border: "2px solid #3e0078",
-    width: "90%",
+    width: "100%",
     height: "300px",
+    position: "relative",
+    marginLeft: "-8.5%",
+    marginTop: "-0.0%",
   };
 
   return (
