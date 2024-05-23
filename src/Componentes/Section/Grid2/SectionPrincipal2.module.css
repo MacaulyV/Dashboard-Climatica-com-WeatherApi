@@ -1,0 +1,166 @@
+.Grid2 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.Clima {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(66, 10, 177, 0);
+  border: solid 1px;
+  border-color: rgb(255, 255, 255, 0.8);
+  border-radius: 25px;
+  align-items: center;
+  height: 320px;
+  width: 100%;
+  margin-top: -7%;
+  margin-left: -1.9%;
+  transition: box-shadow 0.5s, transition-delay 0.5s;
+  box-shadow: none;
+  overflow: hidden; 
+  position: relative;
+  /*  <div className={styles.Clima}>
+  <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 1, filter: 'brightness(1)' }}>
+    <img src={backgroundUrl} alt="" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+  </div> */
+}
+
+.Top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22%;
+  margin-left: 7%;
+  max-width: 200%;
+}
+
+.Low {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  transform: translateY(25%);
+}
+
+.IconInformações {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  transform: translateY(-50%);
+  margin-left: -5%;
+}
+
+.Valor {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: white;
+  white-space: nowrap;
+}
+
+.TiTuloInformação {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: 200;
+  color: white;
+  transform: translateY(-70%);
+  margin-left: 3%;
+}
+
+.GrauDiaSemana {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38%;
+}
+
+.DiaSemana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: white;
+  transform: translateX(85%) translateY(-60%);
+  margin-top: -2%;
+  white-space: nowrap;
+}
+
+.Hora{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: white;
+  white-space: nowrap;
+  transform: translateX(-212%) translateY(20%);
+}
+
+.descriçãoClimaGif {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin-left: 4%;
+}
+
+.IconClima1,
+.IconClima2,
+.IconClima3 {
+  width: 30%;
+}
+
+.IconClima1 {
+  transform: translateY(-20%);
+}
+
+.IconClima2 {
+  transform: translateY(-15%);
+}
+
+.IconClimaPai {
+  width: 10%;
+  transform: translateX(-70%);
+}
+
+.Graus {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 4.5em;
+  font-weight: 200;
+  color: white;
+  margin-left: -3.6%;
+  margin-top: -4%;
+  transform: translateX(100%);
+}
+
+.NomeCidadeHora {
+  transform: translateY(5%);
+}
+
+.NomeCidade {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: white;
+  margin-top: -15%;
+  margin-left: -2%;
+  transform: translateY(85%);
+  white-space: nowrap;
+  max-width: 290px; /* Defina o valor máximo de largura desejado */
+  overflow: hidden; /* Oculta o conteúdo que excede a largura */
+}
+
+.Horario {
+  font-size: 1.1em;
+  color: white;
+  font-weight: 200;
+  margin-top: 12%;
+  white-space: nowrap;
+}
+
+.SituaçãoClima {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.804);
+  font-weight: 200;
+  font-family: "SF Pro Display", sans-serif;
+  white-space: nowrap;
+  margin-left: -2%;
+}
