@@ -1,0 +1,251 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_TelaInicial__D1ZqG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}    /*   width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url("/Gifs/snow.gif");
+min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela
+left: 0;
+position: fixed;
+top: 0;
+z-index: 100;
+*/
+
+.page_Capa__cdrqS {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  background-image: url("/Gifs/snow.gif");
+}
+
+.page_Logo__6zIYb {
+  text-align: center;
+  width: 20%;
+  margin-top: -2%;
+  margin-left: 0%;
+}
+
+.page_Form__pUOgY {
+  background-image: url("/Gifs/snow.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  border-radius: 35px 50px 35px 50px;
+  border: solid 1px #ffffff;
+  padding: 3%;
+  padding-top: 5%;
+  transform: translateY(-00%);
+  margin-left: 0%;
+  width: 27%;
+}
+
+.page_Form__pUOgY:hover{
+  box-shadow: 0 0 2.5px #6200ff, 0 0 5px #6200ff, 0 0 10px #6200ff, 0 0 20px #6200ff,
+  0 0 40px #6200ff;
+}
+
+.page_title__3jonF {
+  width: 100%;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00fbff, #00c8ff);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: page_Gradient__0L7Re 5s ease infinite;
+  font-size: 2.5em;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+@keyframes page_Gradient__0L7Re {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.page_title2__cojCZ{
+  background: linear-gradient(90deg, #5d00ff, #ffffff);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: page_Gradient__0L7Re 5s ease infinite;
+}
+
+.page_Restante__NjaCz {
+  margin-top: -5%;
+}
+
+.page_inputGroup__LAwbK {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.page_inputGroup__LAwbK label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.page_inputGroup__LAwbK input:focus + label {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+.page_inputGroup__LAwbK input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: rgb(255, 0, 242);
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.page_inputGroup__LAwbK input:focus ~ label,
+.page_inputGroup__LAwbK input:valid ~ label {
+  top: -5px;
+}
+
+.page_remember__gM5f0 {
+  margin-bottom: 10px; /* Ajuste conforme necessário para mover para cima */
+}
+
+.page_remember__gM5f0 label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page_remember__gM5f0 label input[type="checkbox"] {
+  display: none;
+}
+
+.page_remember__gM5f0 label .page_checkbox__dY2AP {
+  position: relative;
+  width: 12\px; /* Largura da caixa */
+  height: 12px; /* Altura da caixa */
+  border: 2px solid #00eeff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.page_remember__gM5f0 label input[type="checkbox"]:checked + .page_checkbox__dY2AP {
+  background-color: #0ef;
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.5), 0 0 20px rgba(132, 0, 255, 0.5),
+    0 0 10px rgba(132, 0, 255, 0.5), 0 0 5px rgba(132, 0, 255, 0.5),
+    0 0 20px rgba(132, 0, 255, 0.5);
+}
+
+.page_remember__gM5f0 label .page_checkbox__dY2AP:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.page_remember__gM5f0 label input[type="checkbox"]:checked + .page_checkbox__dY2AP:after {
+  display: block;
+}
+
+.page_remember__gM5f0 label .page_checkbox__dY2AP:after {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -1px; /* Ajusta a posição verticalmente */
+  margin-left: -1px; /* Ajusta a posição horizontalmente */
+}
+
+.page_remember__gM5f0 label .page_label__2GA72 {
+  color: #00eeff;
+  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.page_button__vnlhW {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  color: #fff; /* Branco mais forte */
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  margin-top: 2%;
+}
+
+.page_button__vnlhW:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1.25px #0ef, 0 0 2.5px #0ef, 0 0 5px #0ef, 0 0 10px #0ef,
+    0 0 20px #0ef;
+}
+
+.page_Op__es__xoghy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0%;
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.page_RenomearSenha__y1cON {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #00eeff;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-family: SF Pro Display;
+  cursor: pointer;
+}
+
+.page_signUpLink__LOxVg {
+  text-align: center;
+  margin: 5% 0;
+  border-top: solid 1px;
+  border-color: #ffffff;
+}
+
+.page_signUpLink__LOxVg p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.05em;
+}
+
+.page_signUpLink__LOxVg p a:hover {
+  text-decoration: underline;
+}
+
