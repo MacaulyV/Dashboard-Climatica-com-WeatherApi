@@ -151,30 +151,24 @@ def previsao_horaria():
 def get_map_location():
     location_name = request.json['locationName']
     if not location_name:
-        return jsonify({"error": "Nome da localização não informado"}), 400
-    
+        return jsonify({"error": "Nome de localização não informado"}), 400
     try:
-        url = f"https://maps.googleapis.com/maps/api/geocode/json?address={location_name}&key=AIzaSyDNYUl1UjVcOS6FJXyrQn7yh2-PIPnWDRA"
-        
+        # Substitua YOUR_API_KEY pela sua chave da Google Places API
+        url = f"https://maps.googleapis.com/maps/api/place/autocomplete/json?input={location_name}&key=AIzaSyDNYUl1UjVcOS6FJXyrQn7yh2-PIPnWDRA"
         response = requests.get(url)
-        response.raise_for_status()  # Isso lançará uma exceção se a resposta contiver um código de status de erro
-        
-        result = response.json().get('results', [])[0]
-        latitude = result.get('geometry', {}).get('location', {}).get('lat')
-        longitude = result.get('geometry', {}).get('location', {}).get('lng')
-        if latitude and longitude:
-            return jsonify({"latitude": latitude, "longitude": longitude}), 200
+        if response.status_code!= 200:
+            return jsonify({"error": "Erro na busca de localização"}), 500
+        data = response.json()
+        if 'results' in data and data['results'][0] and 'geometry' in data['results'][0] and 'location' in data['results'][0]['geometry']['location']:
+            return jsonify({
+                "latitude": data['results'][0]['geometry']['location']['lat'],
+                "longitude": data['results'][0]['geometry']['location']['lng']
+            }), 200
         else:
             return jsonify({"error": "Localização não encontrada"}), 404
     except requests.exceptions.HTTPError as errh:
-        logging.error(f"Erro HTTP: {errh}")
-        return jsonify({"error": "Erro ao buscar localização", "details": str(errh)}), 500
-    except requests.exceptions.ConnectionError as errc:
-        logging.error(f"Erro de conexão: {errc}")
-        return jsonify({"error": "Erro de conexão", "details": str(errc)}), 500
-    except requests.exceptions.Timeout as errt:
-        logging.error(f"Erro de tempo limite da solicitação: {errt}")
-        return jsonify({"error": "Erro de tempo limite da solicitação", "details": str(errt)}), 500
+        logging.error(f"Erro HTTP: {err}")
+        return jsonify({"error": "Erro de conexão", "details": str(err)}), 500
     except requests.exceptions.RequestException as err:
         logging.error(f"Erro de solicitação: {err}")
         return jsonify({"error": "Erro de solicitação", "details": str(err)}), 500

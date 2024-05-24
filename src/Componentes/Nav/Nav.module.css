@@ -48,24 +48,19 @@
   font-size: 1.45em;
   font-weight: 600;
   margin-left: -3.9%;
-  background: linear-gradient(90deg, #8952ee, #e73c7e, #23a6d5, #2927aa);
+  background: linear-gradient(90deg, #5271ee, #f469a8, #f67a78, #b01f1f);
   background-size: 400% 400%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: Gradient 5s ease infinite;
 }
 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.Welcome2{
+  background: linear-gradient(90deg, #00fbff, #00fbff, #8e55ff, #ffffff);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  animation: Gradient 5s ease infinite;
 }
 
 .Titulo {

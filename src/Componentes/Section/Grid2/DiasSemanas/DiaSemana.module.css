@@ -18,11 +18,11 @@
 }
 
 .Titulo {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.3em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 200;
-  transform: translateX(-67%) translateY(1730%);
+  font-weight: 500;
+  transform: translateX(-45%) translateY(1730%);
 }
 
 .dia {
@@ -64,4 +64,5 @@
 .weatherIcon {
   width: 100%; /* ou outro tamanho desejado */
   height: 80%;
+
 }

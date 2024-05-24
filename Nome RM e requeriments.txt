@@ -1,0 +1,18 @@
+// Daniel Bezerra da Silva Melo
+// RM-553792
+
+// Macauly Vivaldo da Silva
+// RM-553350
+
+// Vitor Ferreira da Macena
+// RM-553447
+
+Requisitos:
+
+### Passo 1: Instalar as Dependências
+Para instalar as dependências necessárias via pip, execute os seguintes comandos:
+
+```bash
+pip install requests
+pip install logging
+pip install Flask Flask-Cors

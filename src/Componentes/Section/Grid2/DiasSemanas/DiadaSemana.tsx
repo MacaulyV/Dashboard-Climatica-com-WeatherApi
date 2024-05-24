@@ -18,7 +18,7 @@ interface DiadaSemanaProps {
 }
 
 const DiadaSemana: React.FC<DiadaSemanaProps> = ({ forecasts }) => {
-  // Filtrar os próximos 5 resultados
+  // Filtrar os próximos 4 resultados
   const proximasHoras = forecasts.slice(0, 4);
 
   return (
@@ -26,9 +26,9 @@ const DiadaSemana: React.FC<DiadaSemanaProps> = ({ forecasts }) => {
       className={styles.main}
       initial={{ x: "-100vw", opacity: 0 }} // Começa fora da tela à esquerda
       animate={{ x: 0, opacity: 1 }} // Anima para a posição inicial e opacidade completa
-      transition={{ type: "spring", duration: 5, bounce: 0.25 }} 
+      transition={{ type: "spring", duration: 5, bounce: 0.25 }}
     >
-      <h1 className={styles.Titulo}>PREVISÃO HORARÍA:</h1>
+      <h1 className={styles.Titulo}>Previsões a cada 3 Horas:</h1>
       <div className={styles.diadaSemana}>
         {proximasHoras.map((forecast, index) => (
           <div key={index} className={styles.dia}>

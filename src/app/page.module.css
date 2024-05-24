@@ -1,25 +1,247 @@
-.Fundo {
-  background: radial-gradient(circle, rgb(0, 13, 79) 0%, #0f0224 100%);
-  min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+.TelaInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}    /*   width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url("/Gifs/snow.gif");
+min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela
+left: 0;
+position: fixed;
+top: 0;
+z-index: 100;
+*/
+
+.Capa {
+  width: 100%;
   left: 0;
   position: fixed;
   top: 0;
+  background-image: url("/Gifs/snow.gif");
+}
+
+.Logo {
+  text-align: center;
+  width: 20%;
+  margin-top: -2%;
+  margin-left: 0%;
+}
+
+.Form {
+  background-image: url("/Gifs/snow.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  border-radius: 35px 50px 35px 50px;
+  border: solid 1px #ffffff;
+  padding: 3%;
+  padding-top: 5%;
+  transform: translateY(-00%);
+  margin-left: 0%;
+  width: 27%;
+}
+
+.Form:hover{
+  box-shadow: 0 0 2.5px #6200ff, 0 0 5px #6200ff, 0 0 10px #6200ff, 0 0 20px #6200ff,
+  0 0 40px #6200ff;
+}
+
+.title {
   width: 100%;
-  z-index: 100;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00fbff, #00c8ff);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: Gradient 5s ease infinite;
+  font-size: 2.5em;
+  text-align: center;
+  transform: translateY(-50%);
 }
 
-
-.Section{
-display: flex;
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.container {
-  width: 70%;
-  transform: translateY(20.5%) translateX(4%);
+.title2{
+  background: linear-gradient(90deg, #5d00ff, #ffffff);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: Gradient 5s ease infinite;
+}
+
+.Restante {
+  margin-top: -5%;
+}
+
+.inputGroup {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.inputGroup input:focus + label {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+.inputGroup input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: rgb(255, 0, 242);
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  top: -5px;
+}
+
+.remember {
+  margin-bottom: 10px; /* Ajuste conforme necessário para mover para cima */
+}
+
+.remember label {
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.mapcontainer {
-  flex-grow: 1; /* Faz o mapa crescer para preencher o espaço disponível */
+.remember label input[type="checkbox"] {
+  display: none;
+}
+
+.remember label .checkbox {
+  position: relative;
+  width: 12\px; /* Largura da caixa */
+  height: 12px; /* Altura da caixa */
+  border: 2px solid #00eeff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox {
+  background-color: #0ef;
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.5), 0 0 20px rgba(132, 0, 255, 0.5),
+    0 0 10px rgba(132, 0, 255, 0.5), 0 0 5px rgba(132, 0, 255, 0.5),
+    0 0 20px rgba(132, 0, 255, 0.5);
+}
+
+.remember label .checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox:after {
+  display: block;
+}
+
+.remember label .checkbox:after {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -1px; /* Ajusta a posição verticalmente */
+  margin-left: -1px; /* Ajusta a posição horizontalmente */
+}
+
+.remember label .label {
+  color: #00eeff;
+  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  color: #fff; /* Branco mais forte */
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  margin-top: 2%;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1.25px #0ef, 0 0 2.5px #0ef, 0 0 5px #0ef, 0 0 10px #0ef,
+    0 0 20px #0ef;
+}
+
+.Opções {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0%;
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.RenomearSenha {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #00eeff;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-family: SF Pro Display;
+  cursor: pointer;
+}
+
+.signUpLink {
+  text-align: center;
+  margin: 5% 0;
+  border-top: solid 1px;
+  border-color: #ffffff;
+}
+
+.signUpLink p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.05em;
+}
+
+.signUpLink p a:hover {
+  text-decoration: underline;
 }

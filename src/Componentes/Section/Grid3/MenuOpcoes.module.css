@@ -1,0 +1,64 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SubDiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid 1px #ffffff;
+  width: 37%;
+  height: 140px;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, #2a006c 100%);
+  transform: translateX(-10%) translateY(10%);
+}
+
+.Icon {
+  width: 40%;
+  transform: translateY(60%);
+}
+
+.Title {
+  font-size: 1.2em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  color: aqua;
+  transform: translateY(-10%);
+}
+
+.TextButton {
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.OnOff {
+  transform: translateX(-10%);
+  font-size: 1.1em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.Button {
+  width: 40%;
+}
+
+.Button:hover {
+  transition: 500ms;
+  scale: 1.2;
+}
+
+.Graus{
+  font-size: 1.1em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  color: white;
+}

@@ -85,6 +85,7 @@
   transform: translateX(85%) translateY(-60%);
   margin-top: -2%;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 
 .Hora{
